@@ -1,0 +1,22 @@
+<?php
+/**
+ * @category    M2Commerce Enterprise
+ * @package     M2Commerce_WhatsappIntegration
+ * @copyright   Copyright (c) 2023 M2Commerce Enterprise
+ * @author      dawoodgondaldev@gmail.com
+ */
+
+/** @var \M2Commerce\WhatsappIntegration\Helper\Data $helper */
+$helper = $this->helper(\M2Commerce\WhatsappIntegration\Helper\Data::class);?>
+
+<?php if($helper->getStatus()): ?>
+<div id="wachat">
+	<a href="https://web.whatsapp.com/send?phone=<?php echo $helper->getPhone(); ?>&amp;text=<?php echo $helper->getMessage(); ?>" onclick="gtag('event', 'WhatsApp', {'event_action': 'whatsapp_chat', 'event_category': 'Chat', 'event_label': 'Chat_WhatsApp'});" target="_blank" class="btn-web">
+		<img src="<?php echo $this->getViewFileUrl('M2Commerce_WhatsappIntegration::images/button.png'); ?>" alt="WA button">
+	</a>
+
+	<a href="https://wa.me/085236725506?text=<?php echo $helper->getMessage(); ?>" onclick="gtag('event', 'WhatsApp', {'event_action': 'whatsapp_chat', 'event_category': 'Chat', 'event_label': 'Chat_WhatsApp'});" target="_blank" class="btn-mobile">
+		<img src="<?php echo $this->getViewFileUrl('M2Commerce_WhatsappIntegration::images/button.png'); ?>" alt="WA button">
+	</a>
+</div>
+<?php endif; ?>
