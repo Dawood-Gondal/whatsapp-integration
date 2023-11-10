@@ -24,7 +24,7 @@ This extension will also be available on the Magento® Marketplace when approved
    Enter following commands to install extension.
 
    ```
-   composer require m2commerce/zendesk-integration"
+   composer require m2commerce/whatsapp-integration"
    ```
 
    Wait while composer is updated.
@@ -34,13 +34,13 @@ This extension will also be available on the Magento® Marketplace when approved
    You can also download code from this repo under Magento® 2 following directory:
 
     ```
-    app/code/M2Commerce/ZendeskIntegration
+    app/code/M2Commerce/WhatsappIntegration
     ```    
 
 3. Enter following commands to enable the module:
 
    ```
-   php bin/magento module:enable M2Commerce_ZendeskIntegration
+   php bin/magento module:enable M2Commerce_WhatsappIntegration
    php bin/magento setup:upgrade
    php bin/magento setup:di:compile
    php bin/magento cache:clean
