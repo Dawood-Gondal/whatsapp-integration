@@ -8,6 +8,10 @@ The module helps in integration WhatsApp with your website.
 1. WhatsApp integration 
 2. Compatible with 2.3.x and 2.4.x versions.
 
+## Configuration
+
+There are several configuration options for this extension, which can be found at **STORES > Configuration > Commerce Enterprise > WhatsApp Integration**.
+
 ### Screenshot
 ![comment box closed](screenshot/button.png)
 

@@ -14,7 +14,7 @@
                 <resource id="Magento_Backend::stores">
                     <resource id="Magento_Backend::stores_settings">
                         <resource id="Magento_Config::config">
-                            <resource id="M2Commerce_WhatsappIntegration::whatsAppConfig" title="CE - Zendesk Settings"/>
+                            <resource id="M2Commerce_WhatsappIntegration::whatsAppConfig" title="M2C - WhatsApp Settings"/>
                         </resource>
                     </resource>
                 </resource>
